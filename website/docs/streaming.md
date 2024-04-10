@@ -5,8 +5,8 @@ title: 流媒体
 NPlayer 可以非常方便的接入流媒体协议，如果想使用 HLS 可以引入 [hls.js](https://github.com/video-dev/hls.js)。
 
 ```js
-import Hls from 'hls'
-import Player from 'player'
+import Hls from 'hls.js'
+import Player from 'nplayer'
 
 const hls = new Hls()
 const player = new Player()
@@ -29,7 +29,7 @@ hls 是视频点播很常用的协议，本教程还提供了使用 hls.js 实�
 
 ```js
 import dash from 'dashjs'
-import Player from 'player'
+import Player from 'nplayer'
 
 const player = new Player()
 
@@ -52,8 +52,8 @@ dash
 除了让 NPlayer 自动创建 `video` 元素，还可以自己提供 `video` 元素。
 
 ```js
-import Hls from 'hls'
-import Player from 'player'
+import Hls from 'hls.js'
+import Player from 'nplayer'
 
 const video = document.createElement('video')
 const hls = new Hls()
